@@ -5,7 +5,7 @@
   "main": "server/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ronyonka/spotify-profile.git"
+    "url": "https://github.com/Ronyonka/spotify-profile.git"
   },
   "keywords": [],
   "author": "Ron Onyonka <rononyonka@gmail.com>",

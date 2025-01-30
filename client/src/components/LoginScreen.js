@@ -6,7 +6,7 @@ const { colors, fontSizes } = theme;
 const LOGIN_URI =
   process.env.NODE_ENV !== 'production'
     ? 'http://localhost:8888/login'
-    : 'https://spotify-profile.herokuapp.com/login';
+    : 'https://ronyonka.github.io/spotify-profile/login';
 
 const Login = styled(Main)`
   ${mixins.flexCenter};

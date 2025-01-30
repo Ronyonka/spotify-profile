@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ronyonka.github.io/spotify-profile",
+  "homepage": "https://Ronyonka.github.io/spotify-profile",
   "proxy": "http://localhost:8888",
   "engines": {
     "node": "16.20.2"
