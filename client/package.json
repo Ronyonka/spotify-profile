@@ -1,7 +1,12 @@
 {
-  "name": "spotify-profile",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ronyonka.github.io/spotify-profile",
+  "proxy": "http://localhost:8888",
+  "engines": {
+    "node": "16.20.2"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -11,34 +16,16 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "engines": {
-    "node": "10.13.0"
-  },
   "babelMacros": {
     "styledComponents": {
       "pure": true
     }
   },
-  "homepage": "https://spotify-profile.herokuapp.com",
-  "proxy": "http://localhost:8888",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "lint-staged": {
-    "*.{js,css,json,md}": [
-      "prettier --write"
-    ],
-    "*.{js}": [
-      "eslint --fix"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
@@ -52,12 +39,27 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "@upstatement/eslint-config": "^0.4.2",
+    "@upstatement/eslint-config": "^0.4.3",
+    "@upstatement/prettier-config": "^0.3.0",
     "babel-plugin-styled-components": "^1.10.6",
-    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "husky": "^3.0.5",
-    "lint-staged": "^9.2.5"
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.19.1"
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write"
+    ],
+    "*.{js}": [
+      "eslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
