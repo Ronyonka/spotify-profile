@@ -1,5 +1,5 @@
 {
-  "extends": "@upstatement",
+  "extends": ["react-app", "prettier"],
   "parserOptions": {
     "sourceType": "module"
   },
