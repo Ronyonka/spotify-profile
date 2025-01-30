@@ -13,30 +13,18 @@
   "bugs": {
     "url": "https://github.com/ronyonka/spotify-profile/issues"
   },
-  "homepage": "https://github.com/ronyonka/spotify-profile#readme",
+  "homepage": "https://ronyonka.github.io/spotify-profile",
   "engines": {
-    "node": "10.13.0"
+    "node": "16.20.2"
   },
   "scripts": {
-    "client:install": "cd client && yarn",
-    "client": "cd client && yarn start",
     "server": "node server",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "start": "node server",
-    "heroku-postbuild": "cd client/ && yarn && yarn install --production && yarn build"
-  },
-  "lint-staged": {
-    "*.{js,css,json,md}": [
-      "prettier --write"
-    ],
-    "*.{js}": [
-      "eslint --fix"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "client:install": "cd client && npm install",
+    "client": "cd client && npm start",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "predeploy": "cd client && npm run build",
+    "deploy": "gh-pages -d client/build"
   },
   "dependencies": {
     "connect-history-api-fallback": "^1.6.0",
@@ -48,14 +36,7 @@
     "request": "~2.88.0"
   },
   "devDependencies": {
-    "@upstatement/eslint-config": "^0.4.3",
-    "@upstatement/prettier-config": "^0.3.0",
     "concurrently": "^5.1.0",
-    "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.1.1",
-    "prettier": "^2.0.2"
+    "gh-pages": "^6.3.0"
   }
 }
