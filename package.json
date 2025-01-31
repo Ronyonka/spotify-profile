@@ -24,7 +24,7 @@
     "client": "cd client && npm start",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "predeploy": "cd client && npm run build",
-    "deploy": "gh-pages -d client/build"
+    "deploy": "cd client && npm run deploy"
   },
   "dependencies": {
     "connect-history-api-fallback": "^1.6.0",
