@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/spotify-profile/static/js/main.e54f480b.chunk.js",
+    "main.js.map": "/spotify-profile/static/js/main.e54f480b.chunk.js.map",
+    "runtime~main.js": "/spotify-profile/static/js/runtime~main.83a91619.js",
+    "runtime~main.js.map": "/spotify-profile/static/js/runtime~main.83a91619.js.map",
+    "static/js/2.6622e0e6.chunk.js": "/spotify-profile/static/js/2.6622e0e6.chunk.js",
+    "static/js/2.6622e0e6.chunk.js.map": "/spotify-profile/static/js/2.6622e0e6.chunk.js.map",
+    "index.html": "/spotify-profile/index.html",
+    "precache-manifest.127324a72f4ccc5f7a8f7b566c631062.js": "/spotify-profile/precache-manifest.127324a72f4ccc5f7a8f7b566c631062.js",
+    "service-worker.js": "/spotify-profile/service-worker.js"
+  }
+}
